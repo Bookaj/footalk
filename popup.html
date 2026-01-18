@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      color: #2c3e50;
+    }
+
+    .slider-container {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: #e74c3c;
+    }
+
+    .level-display {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e74c3c;
+      margin-bottom: 5px;
+    }
+
+    .description {
+      font-size: 12px;
+      color: #7f8c8d;
+      height: 40px;
+      /* fixed height for stability */
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+
+    .bmc-link {
+      color: #e67e22;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: transform 0.2s;
+    }
+
+    .bmc-link:hover {
+      transform: scale(1.05);
+    }
+
+    .credits {
+      width: 100%;
+      font-size: 9px;
+      color: #bdc3c7;
+      text-align: right;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Footalk - Immersion</h1>
+
+  <div class="slider-container">
+    <div style="margin-bottom: 10px;">
+      <select id="languageSelect" style="width: 100%; padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+        <!-- Options injected by JS -->
+      </select>
+    </div>
+    <div class="level-display">Level <span id="levelValue">0</span></div>
+    <input type="range" id="gravitySlider" min="0" max="100" value="0">
+    <div class="description" id="levelDesc">OFF</div>
+  </div>
+
+  <div class="toggle-row">
+    <span>Enable on this site</span>
+    <input type="checkbox" id="siteEnabled" checked>
+  </div>
+
+  <div class="toggle-row">
+    <span>Show Historical / Fun Modes</span>
+    <input type="checkbox" id="funModesEnabled">
+  </div>
+
+  <div style="margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px;">
+    <div class="toggle-row" style="margin-top: 5px;">
+      <span>Cyrillic Modes</span>
+      <input type="checkbox" id="showCyrillic" checked>
+    </div>
+    <div class="toggle-row" style="margin-top: 5px;">
+      <span>Greek Modes</span>
+      <input type="checkbox" id="showGreek" checked>
+    </div>
+    <div class="toggle-row" style="margin-top: 5px;">
+      <span>Armenian Modes</span>
+      <input type="checkbox" id="showArmenian" checked>
+    </div>
+    <div class="toggle-row" style="margin-top: 5px;">
+      <span>Korean Modes</span>
+      <input type="checkbox" id="showKorean" checked>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://buymeacoffee.com/dnum" target="_blank" class="bmc-link">:) Buy me a coffee (:</a>
+  </div>
+
+  <script src="languages.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>

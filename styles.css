@@ -1,0 +1,27 @@
+/* Footalk Extension Styles */
+
+footalk-tooltip.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+footalk-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(30, 30, 30, 0.95);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 2147483647;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  white-space: pre-wrap;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
