@@ -33,7 +33,8 @@
 -   `languages.js`: Configuration file containing all language definitions and mapping rules.
 -   `popup.html` & `popup.js`: The user interface for settings and controls.
 
-🛠 Installation (The "Fast Track")
+## 🛠 Installation (The "Fast Track")
+
 Since the extension is currently awaiting official approval in the Chrome Web Store, you can install it manually in about 30 seconds.
 
 1. Download the code
